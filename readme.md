@@ -1,5 +1,7 @@
 # gatsby-remark-pretty-link-card
 
+> Sponsored by ColorBliss, the best way to [turn a picture into a coloring page](https://colorbliss.com/photo-to-coloring-page-converter).
+
 ## Description
 
 Generate pretty link preview cards directly from Markdown or MDX using a simple shorthand. Write `[$card](https://example.com)` and this plugin will fetch the target page, extract Open Graph metadata, and render a responsive card with title, description, favicon, and preview image.
