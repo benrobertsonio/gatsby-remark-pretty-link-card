@@ -1,12 +1,15 @@
 {
   "name": "gatsby-remark-pretty-link-card",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "main": "index.js",
   "keywords": [
     "gatsby",
     "gatsby-plugin",
     "remark",
-    "opengraph"
+    "opengraph",
+    "link",
+    "preview",
+    "card"
   ],
   "license": "MIT",
   "files": [
