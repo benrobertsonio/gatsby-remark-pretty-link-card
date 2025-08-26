@@ -1,0 +1,18 @@
+{
+  "name": "gatsby-remark-pretty-link-card",
+  "version": "0.1.0",
+  "main": "index.js",
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin",
+    "remark",
+    "opengraph"
+  ],
+  "license": "MIT",
+  "files": [
+    "index.js",
+    "gatsby-browser.js",
+    "styles.css",
+    "pretty-link-plugin.png"
+  ]
+}

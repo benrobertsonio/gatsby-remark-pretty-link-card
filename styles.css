@@ -1,0 +1,117 @@
+/* pretty-link-card default styles */
+
+.pretty-link-card-container {
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  background: #ffffff;
+  transition: box-shadow 150ms ease, border-color 150ms ease;
+}
+
+.pretty-link-card-container:hover {
+  border-color: #d1d5db;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+.pretty-link-card-wrapper {
+  flex: 1 1 auto;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+}
+
+.pretty-link-card-title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.3;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.pretty-link-card-description {
+  color: #4b5563;
+  font-size: 14px;
+  line-height: 1.4;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.pretty-link-card-url {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #6b7280;
+  font-size: 12px;
+  min-width: 0;
+}
+
+.pretty-link-card-favicon {
+  width: 16px;
+  height: 16px;
+  flex: 0 0 16px;
+}
+
+.pretty-link-card-link {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.pretty-link-card-image-wrapper {
+  position: relative;
+  width: 33%;
+  min-width: 160px;
+  background: #f3f4f6;
+}
+
+.pretty-link-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* hide image if empty src to avoid a request to current doc */
+.pretty-link-card-image[src=""] {
+  display: none;
+}
+
+/* hide the image wrapper when image is empty (supported in modern browsers) */
+.pretty-link-card-image-wrapper:has(img[src=""]) {
+  display: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  .pretty-link-card-container {
+    background: #0b0d12;
+    border-color: #1f2937;
+  }
+
+  .pretty-link-card-container:hover {
+    border-color: #374151;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+  }
+
+  .pretty-link-card-description {
+    color: #9ca3af;
+  }
+
+  .pretty-link-card-url {
+    color: #94a3b8;
+  }
+
+  .pretty-link-card-image-wrapper {
+    background: #111827;
+  }
+}
