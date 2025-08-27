@@ -15,7 +15,7 @@ No public demo site yet.
 
 ### Example
 
-![Pretty link card example](./pretty-link-plugin.png)
+![Pretty link card example](https://github.com/benrobertsonio/gatsby-remark-pretty-link-card/raw/main/pretty-link-plugin.png)
 
 ### Dependencies
 
